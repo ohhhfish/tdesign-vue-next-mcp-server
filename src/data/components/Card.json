@@ -1,0 +1,181 @@
+{
+  "component": "Card",
+  "props": [
+    {
+      "name": "actions",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "卡片操作区。TS 类型：`string | TNode`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    },
+    {
+      "name": "avatar",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "卡片中的用户头像，仅在海报风格的卡片中有效。TS 类型：`string | TNode`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    },
+    {
+      "name": "bodyClassName",
+      "type": "String",
+      "defaultValue": null,
+      "description": "卡片内容的类名，示例：'t-class-body'",
+      "required": false
+    },
+    {
+      "name": "bodyStyle",
+      "type": "Object",
+      "defaultValue": null,
+      "description": "作用于卡片内容的样式。TS 类型：`Styles`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    },
+    {
+      "name": "bordered",
+      "type": "Boolean",
+      "defaultValue": "true",
+      "description": "是否有边框",
+      "required": false
+    },
+    {
+      "name": "content",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "卡片内容。TS 类型：`string | TNode`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    },
+    {
+      "name": "cover",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "卡片封面图。值类型为字符串，会自动使用 `img` 标签输出封面图；也可以完全自定义封面图。TS 类型：`string | TNode`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    },
+    {
+      "name": "default",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "卡片内容，同 content。TS 类型：`string | TNode`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    },
+    {
+      "name": "description",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "卡片描述文案。TS 类型：`string | TNode`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    },
+    {
+      "name": "footer",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "卡片底部内容，可完全自定义。TS 类型：`string | TNode`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    },
+    {
+      "name": "footerClassName",
+      "type": "String",
+      "defaultValue": null,
+      "description": "卡片底部的类名，示例：'t-class-footer'",
+      "required": false
+    },
+    {
+      "name": "footerStyle",
+      "type": "Object",
+      "defaultValue": null,
+      "description": "作用于卡片底部的样式。TS 类型：`Styles`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    },
+    {
+      "name": "header",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "卡片顶部内容，优先级高于其他所有元素。TS 类型：`string | TNode`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    },
+    {
+      "name": "headerBordered",
+      "type": "Boolean",
+      "defaultValue": "false",
+      "description": "头部是否带分割线，仅在有header时有效",
+      "required": false
+    },
+    {
+      "name": "headerClassName",
+      "type": "String",
+      "defaultValue": null,
+      "description": "卡片头部的类名，示例：'t-class-header'",
+      "required": false
+    },
+    {
+      "name": "headerStyle",
+      "type": "Object",
+      "defaultValue": null,
+      "description": "作用于卡片头部的样式。TS 类型：`Styles`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    },
+    {
+      "name": "hoverShadow",
+      "type": "Boolean",
+      "defaultValue": "false",
+      "description": "hover时是否有阴影",
+      "required": false
+    },
+    {
+      "name": "loading",
+      "type": "Boolean / Slot / Function",
+      "defaultValue": "false",
+      "description": "加载状态，值为 true 会根据不同的布局显示不同的加载状态，值为 false 则表示非加载状态。也可以使用 Skeleton 组件完全自定义加载态呈现内容。TS 类型：`boolean | TNode`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    },
+    {
+      "name": "loadingProps",
+      "type": "Object",
+      "defaultValue": null,
+      "description": "透传加载组件(Loading)全部属性。TS 类型：`LoadingProps`，[Loading API Documents](./loading?tab=api)。[详细类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/card/type.ts)",
+      "required": false
+    },
+    {
+      "name": "shadow",
+      "type": "Boolean",
+      "defaultValue": "false",
+      "description": "是否显示卡片阴影，默认不显示",
+      "required": false
+    },
+    {
+      "name": "size",
+      "type": "String",
+      "defaultValue": "medium",
+      "description": "尺寸。可选项：medium/small",
+      "required": false
+    },
+    {
+      "name": "status",
+      "type": "String",
+      "defaultValue": null,
+      "description": "卡片状态内容，仅在操作区域不在顶部时有效（即 `theme=poster2` ）",
+      "required": false
+    },
+    {
+      "name": "subtitle",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "卡片副标题。TS 类型：`string | TNode`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    },
+    {
+      "name": "theme",
+      "type": "String",
+      "defaultValue": "normal",
+      "description": "卡片风格：普通风格、海报风格1（操作区域在顶部）、海报风格2（操作区域在底部）。可选项：normal/poster1/poster2",
+      "required": false
+    },
+    {
+      "name": "title",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "卡片标题。TS 类型：`string | TNode`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    }
+  ],
+  "events": []
+}

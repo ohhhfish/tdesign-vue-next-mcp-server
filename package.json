@@ -1,0 +1,30 @@
+{
+  "name": "tdesign-vue-next-mcp-server",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "bin": {
+  },
+  "scripts": {
+    "build": "tsc -p . && pnpm run copy-data",
+    "start": "node build/index.js",
+    "dev": "tsx watch src/index.ts",
+    "parse-doc": "node build/scripts/parseComponentDoc.js",
+    "copy-data": "node -e \"const fs=require('fs');const path=require('path');const src=path.resolve('src','data');const dst=path.resolve('build','data');if(fs.existsSync(src)){fs.cpSync(src,dst,{recursive:true,force:true});console.error('Copied data:',src,'->',dst);}else{console.error('No src/data to copy');}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.7.1",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.5",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "tsx": "^4.19.1",
+    "typescript": "^5.9.2"
+  }
+}

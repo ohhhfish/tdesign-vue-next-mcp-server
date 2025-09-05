@@ -1,0 +1,61 @@
+{
+  "component": "Affix",
+  "props": [
+    {
+      "name": "container",
+      "type": "String / Function",
+      "defaultValue": "() => (() => window)",
+      "description": "指定滚动的容器。数据类型为 String 时，会被当作选择器处理，进行节点查询。示例：'body' 或 () => document.body。TS 类型：`ScrollContainer`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    },
+    {
+      "name": "content（暂未实现）",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "内容。TS 类型：`string | TNode`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    },
+    {
+      "name": "default",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "内容，同 content。TS 类型：`string | TNode`。[通用类型定义](https://github.com/Tencent/tdesign-vue-next/blob/develop/packages/components/common.ts)",
+      "required": false
+    },
+    {
+      "name": "offsetBottom",
+      "type": "Number",
+      "defaultValue": "0",
+      "description": "距离容器底部达到指定距离后触发固定",
+      "required": false
+    },
+    {
+      "name": "offsetTop",
+      "type": "Number",
+      "defaultValue": "0",
+      "description": "距离容器顶部达到指定距离后触发固定",
+      "required": false
+    },
+    {
+      "name": "zIndex",
+      "type": "Number",
+      "defaultValue": null,
+      "description": "固钉定位层级，样式默认为 500",
+      "required": false
+    },
+    {
+      "name": "onFixedChange",
+      "type": "Function",
+      "defaultValue": null,
+      "description": "TS 类型：`(affixed: boolean, context: { top: number }) => void`<br/>固定状态发生变化时触发",
+      "required": false
+    }
+  ],
+  "events": [
+    {
+      "name": "fixed-change",
+      "params": "`(affixed: boolean, context: { top: number })`",
+      "description": "固定状态发生变化时触发"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "component": "DialogCard",
+  "props": [
+    {
+      "name": "body",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "cancelBtn",
+      "type": "String / Object / Slot / Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "closeBtn",
+      "type": "String / Boolean / Slot / Function",
+      "defaultValue": "true",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "confirmBtn",
+      "type": "String / Object / Slot / Function",
+      "defaultValue": "true",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "confirmLoading",
+      "type": "Boolean",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "footer",
+      "type": "Boolean / Slot / Function",
+      "defaultValue": "true",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "header",
+      "type": "String / Boolean / Slot / Function",
+      "defaultValue": "true",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "theme",
+      "type": "String",
+      "defaultValue": "default",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "onCancel",
+      "type": "Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "onCloseBtnClick",
+      "type": "Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "onConfirm",
+      "type": "Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    }
+  ],
+  "events": [
+    {
+      "name": "cancel",
+      "params": "`(context: { e: MouseEvent })`",
+      "description": "如果“取消”按钮存在，则点击“取消”按钮时触发，同时触发关闭事件。可选项：default/info/warning/danger/success"
+    },
+    {
+      "name": "close-btn-click",
+      "params": "`(context: { e: MouseEvent })`",
+      "description": "点击右上角关闭按钮时触发。可选项：default/info/warning/danger/success"
+    },
+    {
+      "name": "confirm",
+      "params": "`(context: { e: MouseEvent | KeyboardEvent })`",
+      "description": "如果“确认”按钮存在，则点击“确认”按钮时触发，或者键盘按下回车键时触发。可选项：default/info/warning/danger/success"
+    }
+  ]
+}

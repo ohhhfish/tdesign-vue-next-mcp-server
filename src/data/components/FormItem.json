@@ -1,0 +1,97 @@
+{
+  "component": "FormItem",
+  "props": [
+    {
+      "name": "for",
+      "type": "String",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "help",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "label",
+      "type": "String / Slot / Function",
+      "defaultValue": "''",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "labelAlign",
+      "type": "String",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "labelWidth",
+      "type": "String / Number",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "name",
+      "type": "String",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "requiredMark",
+      "type": "Boolean",
+      "defaultValue": "undefined",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "rules",
+      "type": "Array",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "showErrorMessage",
+      "type": "Boolean",
+      "defaultValue": "undefined",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "status",
+      "type": "String",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "statusIcon",
+      "type": "Boolean / Slot / Function",
+      "defaultValue": "undefined",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "successBorder",
+      "type": "Boolean",
+      "defaultValue": "false",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "tips",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    }
+  ],
+  "events": []
+}

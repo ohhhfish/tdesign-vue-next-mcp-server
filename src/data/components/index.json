@@ -1,0 +1,40 @@
+{
+  "components": [
+    {
+      "name": "Button",
+      "file": "src/data/components/Button.json"
+    },
+    {
+      "name": "Card",
+      "file": "src/data/components/Card.json"
+    },
+    {
+      "name": "DialogCard",
+      "file": "src/data/components/DialogCard.json"
+    },
+    {
+      "name": "Form",
+      "file": "src/data/components/Form.json"
+    },
+    {
+      "name": "Affix",
+      "file": "src/data/components/Affix.json"
+    },
+    {
+      "name": "AutoComplete",
+      "file": "src/data/components/AutoComplete.json"
+    },
+    {
+      "name": "Avatar",
+      "file": "src/data/components/Avatar.json"
+    },
+    {
+      "name": "AvatarGroup",
+      "file": "src/data/components/AvatarGroup.json"
+    },
+    {
+      "name": "FormItem",
+      "file": "src/data/components/FormItem.json"
+    }
+  ]
+}

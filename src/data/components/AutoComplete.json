@@ -1,0 +1,264 @@
+{
+  "component": "AutoComplete",
+  "props": [
+    {
+      "name": "autofocus",
+      "type": "Boolean",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "borderless",
+      "type": "Boolean",
+      "defaultValue": "false",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "clearable",
+      "type": "Boolean",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "default",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "disabled",
+      "type": "Boolean",
+      "defaultValue": "undefined",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "empty",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "filter",
+      "type": "Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "filterable",
+      "type": "Boolean",
+      "defaultValue": "true",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "highlightKeyword",
+      "type": "Boolean",
+      "defaultValue": "true",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "inputProps",
+      "type": "Object",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "options",
+      "type": "Array",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "panelBottomContent",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "panelTopContent",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "placeholder",
+      "type": "String",
+      "defaultValue": "undefined",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "popupProps",
+      "type": "Object",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "readonly",
+      "type": "Boolean",
+      "defaultValue": "undefined",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "size",
+      "type": "String",
+      "defaultValue": "medium",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "status",
+      "type": "String",
+      "defaultValue": "default",
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "textareaProps",
+      "type": "Object",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "tips",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "triggerElement",
+      "type": "String / Slot / Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "value",
+      "type": "String",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "defaultValue",
+      "type": "String",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "onBlur",
+      "type": "Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "onChange",
+      "type": "Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "onClear",
+      "type": "Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "onCompositionend",
+      "type": "Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "onCompositionstart",
+      "type": "Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "onEnter",
+      "type": "Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "onFocus",
+      "type": "Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    },
+    {
+      "name": "onSelect",
+      "type": "Function",
+      "defaultValue": null,
+      "description": "",
+      "required": false
+    }
+  ],
+  "events": [
+    {
+      "name": "blur",
+      "params": "`(context: { e: FocusEvent; value: string })`",
+      "description": "失去焦点时触发"
+    },
+    {
+      "name": "change",
+      "params": "`(value: string, context?: { e?: InputEvent | MouseEvent | CompositionEvent | KeyboardEvent })`",
+      "description": "输入框值发生变化时触发"
+    },
+    {
+      "name": "clear",
+      "params": "`(context: { e: MouseEvent })`",
+      "description": "清空按钮点击时触发"
+    },
+    {
+      "name": "compositionend",
+      "params": "`(context: { e: CompositionEvent; value: string })`",
+      "description": "中文输入结束时触发"
+    },
+    {
+      "name": "compositionstart",
+      "params": "`(context: { e: CompositionEvent; value: string })`",
+      "description": "中文输入开始时触发"
+    },
+    {
+      "name": "enter",
+      "params": "`(context: { e: KeyboardEvent; value: string })`",
+      "description": "回车键按下时触发"
+    },
+    {
+      "name": "focus",
+      "params": "`(context: { e: FocusEvent; value: string })`",
+      "description": "获得焦点时触发"
+    },
+    {
+      "name": "select",
+      "params": "`(value: string, context: { e: MouseEvent | KeyboardEvent })`",
+      "description": "选中联想词时触发"
+    }
+  ]
+}
